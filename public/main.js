@@ -3,6 +3,8 @@ let move = 0;
 let result = '';
 const contentWrapper = document.getElementById('content');
 const modalResult = document.getElementById('modal-result-wrapper');
+const overlay = document.getElementById('overlay');
+const btnClose = document.getElementById('btn-close');
 
 area.addEventListener('click', e => {
     if(e.target.className = 'box') {
