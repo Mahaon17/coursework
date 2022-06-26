@@ -44,3 +44,8 @@ const prepareResult = winner => {
     contentWrapper.innerHTML = `${winner} won`;
     modalResult.style.display = 'block';
 }
+
+const closeModal = () => {
+    modalResult.style.display = 'none';
+    location.reload();
+}
