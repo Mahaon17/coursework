@@ -30,10 +30,17 @@ const check = () => {
             boxes[array[i][0]].innerHTML == 'X' && boxes[array[i][1]].innerHTML == 'X' && boxes[array[i][2]].innerHTML == 'X'
         ) {
             result = 'Crosses';
+            prepareResult(result);
         } else if (
             boxes[array[i][0]].innerHTML == 'O' && boxes[array[i][1]].innerHTML == 'O' && boxes[array[i][2]].innerHTML == 'O'
         ) {
             result = 'Circles';
+            prepareResult(result);
     }
 }
+}
+
+const prepareResult = winner => {
+    contentWrapper.innerHTML = `${winner} won`;
+    modalResult.style.display = 'block';
 }
