@@ -1,6 +1,8 @@
 const area = document.getElementById('area');
 let move = 0;
 let result = '';
+const contentWrapper = document.getElementById('content');
+const modalResult = document.getElementById('modal-result-wrapper');
 
 area.addEventListener('click', e => {
     if(e.target.className = 'box') {
