@@ -36,6 +36,11 @@ const check = () => {
         ) {
             result = 'Circles';
             prepareResult(result);
+        } else if (
+            move==9
+            ) {
+                result = 'Nobody';
+                prepareResult(result);
     }
 }
 }
